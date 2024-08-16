@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Video</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #ff6600;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            margin-right: 20px;
+        }
+
+        .nav-links a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-image {
+            width: 300px;
+            height: 200px;
+            background-color: #000;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+        }
+
+        .product-info {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .product-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ff6600;
+            margin-bottom: 10px;
+        }
+
+        .product-description {
+            line-height: 1.5;
+        }
+
+        .product-features {
+            list-style: disc;
+            margin-left: 20px;
+        }
+
+        .product-features li {
+            margin-bottom: 5px;
+        }
+
+        .buy-button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .buy-button:hover {
+            background-color: #3e8e41;
+        }
+
+        .rating {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .rating .star {
+            color: #ffc107;
+            font-size: 16px;
+            margin-right: 5px;
+        }
+
+        .reviews {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .validity-select {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        .wishlist-button {
+            background-color: #f44336;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .wishlist-button:hover {
+            background-color: #d32f2f;
+        }
+
+        .delivery-info {
+            margin-top: 20px;
+        }
+
+        .delivery-info p {
+            margin-bottom: 5px;
+        }
+
+        .guaranteed-checkout {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .payment-logos {
+            width: 200px;
+            height: 50px;
+            margin-left: 5px;
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .payment-logos img {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+        }
+
+        .we-are-here {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        .we-are-here:hover {
+            background-color: #3e8e41;
+        }
+
+        .flag-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .flag-container img {
+            margin-right: 10px;
+        }
+        .a{
+        background-color:red;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Celebrating 5year</h1>
+    </header>
+
+    <div class="container">
+        <div class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop now</a></li>
+            <li><a href="#">My account</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Giveaway</a></li>
+            <li><a href="#">Testimonial</a></li>
+            <li><a href="#">Contact us</a></li>
+        </div>
+
+        <div class="flag-container">
+            <img src="https://flagcdn.com/in.svg" alt="India Flag" width="25">
+            <img src="https://flagcdn.com/us.svg" alt="USA Flag" width="25">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="content">
+            <div class="product-image">
+                <img src="assets/images/pv.png" alt="Prime Video">
+            </div>
+            <div class="product-info">
+                <h2 class="product-title">Prime Video</h2>
+                <p class="product-price">₹75.00 - ₹ 675.00</p>
+                <p class="product-description">Sale!</p>
+                <ul class="product-features">
+                    <li>Private Prime Videos Premium subscription</li>
+                    <li>All Devices Supported (Android, IOS, Windows, Mac, TV)</li>
+                    <li>Can be Used Up to 2 Device at the same Time</li>
+                    <li>Create your own Profile</li>
+                </ul>
+                <a href="#" class="buy-button">Add to cart</a>
+                <div class="rating">
+                <br>
+                    ★★★★★
+                    <span class="reviews"><br>(110 customer reviews)</span>
+                </div>
+                <select class="validity-select">
+                    <option value="">Choose Validity</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <button class="wishlist-button">Add to wishlist</button>
+                <div class="delivery-info">
+                    <p>Free worldwide Email Delivery Within 30-180min.</p>
+                    <p>Doubts or Concerns? Chat with us</p>
+                    <p>Read Description for all Details</p>
+                </div>
+                <div class="guaranteed-checkout">
+                    <p>Guaranteed Safe Checkout</p>
+                    <div class="payment-logos">
+                        <img src="assets/images/payment.png" alt="payment-logos" width="50">
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="we-are-here">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1T63zC746yQ3T5-H_5982oT24o3f4256uN5Q&usqp=CAU" alt="Hand" width="30">
+        <p>WE ARE HERE!</p>
+        <span>Online</span>
+    </button>
+
+    <script>
+        // Add event listener to the "WE ARE HERE" button
+        const weAreHereButton = document.querySelector('.we-are-here');
+
+        weAreHereButton.addEventListener('click', function() {
+            // Add your desired functionality here, e.g., redirect to a specific page
+            alert("You clicked the 'WE ARE HERE' button!");
+        });
+    </script>
+</body>
+</html>
